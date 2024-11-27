@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.seamless {
+  @apply offset_shadow;
+  @apply flex items-center px-4 py-4 rounded-lg mx-auto gap-2 w-[90%] md:w-fit;
+  @apply bg-article_dark_grey;
+}
+
+.seamless:nth-child(2) {
+  @apply w-full md:w-fit md:gap-4 md:p-6;
+}
+
+.offset_shadow {
+  /* box-shadow: 0px -0.12px 0px 0.25px #989898; */
+  /* @apply shadow-[0_-0.1px_0px_0.2px_#989898] md:shadow-[0_-0.1px_0px_0.3px_#989898]; */
+  animation-name: animate-border;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.financial_plan_icon_container {
+  @apply flex justify-center md:w-[60px] md:h-[60px] flex-1 md:flex-none items-center  rounded-lg p-8 md:p-2 bg-[#202020] offset_shadow;
+}
+
+#QRCODE {
+  /* border-style: dashed; */
+}
+/* 
+#sustainable {
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
+} */
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+.financial_freedom_article_header {
+  @apply flex gap-4 items-center mb-4;
+}
+
+@keyframes animate-border {
+  0% {
+    /* @apply shadow-[0_-0.1px_0px_0.2px_#989898] md:shadow-[0_-0.1px_0px_0.3px_#989898]; */
+    box-shadow: 0px -0.12px 0px 0.25px #989898;
+  }
+  100% {
+    /* @apply shadow-[0_-0.1px_0px_0.2px_grey] md:shadow-[0_-0.1px_0px_0.3px_#989898]; */
+    box-shadow: 0px -0.12px 0px 0.25px white;
+  }
+}
+
+.testimonial_slide {
+  /* position: relative;
+  display: flex;
+  gap: 12px; */
+  @apply flex gap-4 relative min-w-full md:min-w-min bg-secondary_color before:content-[''] before:md:border before:md:border-black;
+}

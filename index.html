@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#070606] text-white">
+    <header
+      class="flex justify-between p-4 md:p-2 items-center border-b-2 border-[#3D3D3D]"
+    >
+      <div class="flex items-center">
+        <div id="logo-icon">
+          <img class="md:w-12" src="./images/company log.svg" alt="" />
+        </div>
+        <h1 class="md:text-3xl">Raft</h1>
+      </div>
+      <nav class="hidden md:flex">
+        <ul class="flex gap-12 text-light_grey">
+          <li><a href="">Solutions</a></li>
+          <li><a href="">Learn</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+      <nav class="hidden md:flex gap-2 items-center">
+        <a href="">Login</a>
+        <a class="bg-hero_green rounded-full p-2 md:px-4 text-sm" href=""
+          >Get Started</a
+        >
+      </nav>
+
+      <div class="md:hidden flex">
+        <img src="./images/mobile-menu.svg" alt="" />
+      </div>
+    </header>
+
+    <main class="max-w-screen-2xl mx-auto">
+      <section class="text-center py-14 pb-24">
+        <button
+          id="hero_btn"
+          class="mx-auto gap-1 rounded-full px-4 py-1 bg-[#202020] offset_shadow"
+        >
+          <span class="flex gap-4 items-center"
+            >Introducing Raft Cards <img src="./images/hero-arrow.svg" alt=""
+          /></span>
+        </button>
+        <div
+          class="md:bg-hero_mask_desktop bg-hero bg-auto bg-no-repeat bg-center"
+        >
+          <h2
+            class="text-4xl md:text-8xl mt-6 mb-8 mx-4 max-w-screen-lg md:mx-auto"
+          >
+            Building the future of banking
+          </h2>
+          <p class="m-4 text-light_grey max-w-md mx-auto">
+            Experience the future of banking with RAFT. We're here to empower
+            your financial journey
+          </p>
+          <button class="bg-hero_green px-12 py-4 rounded-full">
+            Get Started
+          </button>
+        </div>
+      </section>
+      <!-- <div class="bg-hero h-[300px]"></div> -->
+      <!-- <img src="./images/hero_mask.svg" alt="" /> -->
+      <div class="md:mx-8 mx-4 md:mb-20">
+        <img
+          class="w-full object-cover aspect-[0.8] md:aspect-auto object-center rounded-lg"
+          src="./images/happy people desktop.png"
+          alt="smiling people a white and black person"
+        />
+      </div>
+
+      <!----carousel slider-->
+      <section class="text-center mt-8 mb-32" id="carousel">
+        <h3 class="text-light_grey">FEATURED AND SEEN IN</h3>
+        <div
+          id="carousel_slide"
+          class="flex gap-12 md:justify-center items-center overflow-auto px-4"
+        >
+          <div class="min-w-[25vw] md:min-w-12 flex items-center">
+            <img
+              class="w-full"
+              src="./images/Forbes_logo 1.png"
+              alt="cnbc logo"
+            />
+          </div>
+          <div class="min-w-[25vw] md:min-w-12 flex items-center">
+            <img class="w-full" src="./images/cnbc-1.png" alt="cnbc logo" />
+          </div>
+          <div class="min-w-[25vw] md:min-w-12 flex items-center">
+            <img src="./images/bloomberg-1.png" alt="bloomber logo" />
+          </div>
+          <div class="min-w-[25vw] md:min-w-12 flex items-center">
+            <img src="./images/reuters-2-1 1.png" alt="reuter logo" />
+          </div>
+          <div class="min-w-[25vw] md:min-w-12 flex items-center">
+            <img src="./images/cnn-logo 1.png" alt="cnn logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center mb-32">
+        <h1 class="text-4xl md:text-6xl mb-8 max-w-2xl mx-auto">
+          Elevate Your financial Journey with RAFT
+        </h1>
+        <p class="text-grey_bg mb-16 text-light_grey max-w-md mx-auto">
+          RAFT offers a world of financial possibilities. From investments to
+          payments, we've got you covered. Join us and unlock your financial
+          potential today.
+        </p>
+
+        <div class="md:flex" id="financial_journey_desktop_first_division">
+          <article
+            class="text-left px-4 mx-4 md:px-10 md:pb-10 md:ml-20 rounded-lg offset_shadow bg-[#131313] pb-4 mb-8 md:flex-[1.4] relative"
+          >
+            <div
+              class="flex flex-col gap-4 pt-8 mb-12 bg-seamless_mask bg-cover md:bg-auto bg-no-repeat bg-center"
+            >
+              <button class="seamless">
+                <span class="bg-[#202020] p-2 rounded-lg"
+                  ><img src="./images/seamless payment arrow.svg" alt=""
+                /></span>
+                <p class="text-xs">+$22.15 Received from Nguyen Shane</p>
+              </button>
+              <button class="seamless">
+                <span class="bg-[#202020] p-2 rounded-lg"
+                  ><img src="./images/seamless payment arrow.svg" alt=""
+                /></span>
+                <p class="text-xs">+$300.52 Received from Cooper Kristin</p>
+              </button>
+              <button class="seamless">
+                <span class="bg-[#202020] p-2 rounded-lg"
+                  ><img src="./images/seamless payment arrow.svg" alt=""
+                /></span>
+                <p class="text-xs">+$50.00 Received from Miles Esther</p>
+              </button>
+            </div>
+
+            <!-- overlay of article-->
+            <div
+              class="absolute w-full left-0 -mt-[120px] z-10 h-[120px] bg-gradient-to-b from-transparent to-[#131313]"
+            ></div>
+            <!----->
+
+            <h2 class="mb-4 text-2xl">Seamless Payments</h2>
+            <p class="text-sm text-light_grey">
+              Enjoy secure, seamless transactions that make managing your money
+              a breeze
+            </p>
+          </article>
+          <article
+            class="pl-4 mx-4 md:mr-20 pb-4 md:pl-10 md:pb-10 text-left rounded-lg offset_shadow bg-article_dark_grey mb-8 md:flex-[0.6] relative"
+          >
+            <div
+              class="flex flex-col gap-3 bg-article-mask items-end pt-12 mb-12"
+            >
+              <button
+                class="flex gap-2 items-center bg-[#202020] rounded-l-lg p-2 w-[80%] offset_shadow"
+              >
+                <span><img src="./images/cryptocurrency.svg" alt="" /></span>
+                <p>Cryptocurrrency</p>
+              </button>
+              <button
+                class="flex gap-2 items-center rounded-l-lg p-2 w-[90%] bg-[#202020] offset_shadow"
+              >
+                <span
+                  ><img src="./images/smart portolio invest.svg" alt=""
+                /></span>
+                <p>Smart Portfolio Investing</p>
+              </button>
+              <button
+                id="sustainable"
+                class="flex gap-2 items-center rounded-l-lg p-2 w-[80%] bg-[#202020] offset_shadow"
+              >
+                <span
+                  ><img src="./images/sustainable investing.svg" alt=""
+                /></span>
+                <p>Sustainable Investing</p>
+              </button>
+            </div>
+            <div
+              class="absolute w-full left-0 -mt-[180px] z-10 h-[150px] bg-gradient-to-b from-transparent to-[#131313]"
+            ></div>
+            <h2 class="text-2xl mr-4 mb-4">Smart Investing</h2>
+            <p class="mr-4 text-sm text-light_grey">
+              Grow your wealth confidently with our personalized investment
+              solutions, tailored to your financial goals.
+            </p>
+          </article>
+        </div>
+
+        <div class="md:flex">
+          <article
+            class="px-4 md:px-10 md:pb-10 mx-4 md:ml-20 offset_shadow rounded-lg text-left pb-4 mb-8 bg-article_dark_grey md:mb-0 md:flex-[0.6] relative"
+          >
+            <div class="bg-article-mask pt-20">
+              <div class="bg-[#202020] rounded-lg p-4">
+                <div class="flex gap-4">
+                  <div>
+                    <img src="./images/avatar.png" alt="avatar" />
+                  </div>
+                  <div class="text-left">
+                    <p>Wade Warren</p>
+                    <p>Private Wealth manager</p>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                  <input
+                    type="text"
+                    name="message"
+                    id="message"
+                    placeholder="send a message"
+                    class="bg-[#202020] bg-opacity-0 z-20 rounded-lg outline-none placeholder:text-opacity-15"
+                  />
+                  <div>
+                    <img src="./images/message icon.svg" alt="message" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute w-full left-0 -mt-[150px] z-10 h-[150px] bg-gradient-to-b from-transparent to-[#131313]"
+            ></div>
+
+            <h2 class="text-2xl mb-4 md:mt-12">Wealth Management</h2>
+            <p class="text-sm text-light_grey">
+              Make informed decisions for your financial future with our wealth
+              management expertise
+            </p>
+          </article>
+
+          <article
+            class="offset_shadow mx-4 px-4 md:px-10 pb-4 md:pb-10 md:mr-20 rounded-lg bg-article_dark_grey text-left md:flex-[1.4] relative"
+          >
+            <div class="bg-financial_plan_mask_dsktop pt-12 bg-cover mb-8 -z-0">
+              <div class="flex justify-between md:justify-center gap-3 mb-3">
+                <div class="financial_plan_icon_container">
+                  <img src="./images/financial plan - 1.svg" alt="" />
+                </div>
+                <div class="financial_plan_icon_container">
+                  <img src="./images/financial plan - 2.svg" alt="" />
+                </div>
+                <div class="financial_plan_icon_container">
+                  <img src="./images/financial plan 3.svg" alt="" />
+                </div>
+              </div>
+              <div class="flex justify-between md:justify-center gap-3">
+                <div class="financial_plan_icon_container">
+                  <img src="./images/financial plan - 4.svg" alt="" />
+                </div>
+                <div class="financial_plan_icon_container">
+                  <img src="./images/financial plan - 5.svg" alt="" />
+                </div>
+                <div class="financial_plan_icon_container">
+                  <img src="./images/financial plan - 6.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute w-full left-0 -mt-[200px] z-10 h-[200px] bg-gradient-to-b from-transparent to-[#131313]"
+            ></div>
+            <h2 class="text-2xl mb-4 md:pt-10">Fianancial Planning</h2>
+            <p class="text-sm text-light_grey md:max-w-md">
+              Achieve your financial dreams with our comprehensive financial
+              planning services, guiding you toward a secure future.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="text-center px-4 md:px-20 mb-14">
+        <h1 class="text-4xl md:text-7xl mb-8 max-w-2xl mx-auto">
+          Your Financial Freedom, Your Way
+        </h1>
+        <p class="text-sm mb-24 max-w-lg mx-auto text-light_grey">
+          We believe that managing your finances should be effortless and
+          cost-effective. That's why we offer you the freedom you deserve
+        </p>
+
+        <div class="mx-auto mb-12">
+          <img
+            class="w-full md:hidden flex"
+            src="./images/financial freedom mobile.png"
+            alt=""
+          />
+          <img
+            class="w-full md:flex hidden"
+            src="./images/financial freedom desktop.png"
+            alt=""
+          />
+        </div>
+
+        <div class="md:flex md:gap-4">
+          <article class="text-left mb-8">
+            <div class="financial_freedom_article_header">
+              <div><img src="./images/minimum balance fee.svg" alt="" /></div>
+              <p>No minimum balance fees</p>
+            </div>
+            <p class="text-sm text-light_grey">
+              Say goodbye to minimum balance fees. Your account, your balance -
+              no hidden charges
+            </p>
+          </article>
+          <article class="text-left mb-8">
+            <div class="financial_freedom_article_header">
+              <div><img src="./images/monthly fees.svg" alt="" /></div>
+              <p>No monhly fees</p>
+            </div>
+            <p class="text-sm text-light_grey">
+              Bank with us without worrying about monthly fees. Keep more of
+              your money where it belongs — in your account
+            </p>
+          </article>
+          <article class="text-left">
+            <div class="financial_freedom_article_header">
+              <div><img src="./images/bank transfer.svg" alt="" /></div>
+              <p>No bank transfer</p>
+            </div>
+            <p class="text-sm text-light_grey">
+              Seamlessly transfer funds without the extra cost. Send and receive
+              money with zero bank transfer fees.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="px-4 md:px-12 py-6 md:py-24 bg-secondary_color text-black mb-14"
+      >
+        <h1 class="text-6xl md:text-9xl max-w-screen-xl">
+          Smart investments, secure payments, and expert guidance, all in one
+          place.
+        </h1>
+      </section>
+
+      <section class="px-4 md:px-20 mb-8">
+        <h1 class="text-4xl md:text-6xl mb-8 md:max-w-xl">
+          Confidently Shape Your Financial Future
+        </h1>
+        <p class="text-sm mb-14 text-light_grey max-w-lg">
+          At RAFT, we empower you to confidently shape your financial future.
+          Our modern approach simplifies saving and investing, making it easier
+          than ever.
+        </p>
+
+        <div class="md:flex md:gap-8">
+          <article
+            class="bg-article_dark_grey p-4 md:p-10 rounded-lg mb-8 md:mb-0 offset_shadow"
+          >
+            <h2 class="mb-4 text-3xl">Spend better</h2>
+            <p class="text-light_grey">
+              Set and achieve financial goals with ease, automate your savings,
+              and watch your money grow without the stress.
+            </p>
+            <div class="w-full flex justify-center">
+              <img class="min-w-full" src="./images/money send.svg" alt="" />
+            </div>
+          </article>
+          <article
+            class="bg-article_dark_grey p-4 md:p-10 rounded-lg offset_shadow"
+          >
+            <h2 class="text-3xl mb-4">Invest better</h2>
+            <p class="text-light_grey">
+              Set and achieve financial goals with ease, automate your savings,
+              and watch your money grow without the stress.
+            </p>
+            <div class="w-full flex justify-center">
+              <img class="min-w-full" src="./images/invest better.svg" alt="" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Achievements -->
+      <section
+        id="goals"
+        class="flex justify-between text-center mx-4 md:mx-20 mb-8 md:mb-16"
+      >
+        <div class="flex flex-col items-center">
+          <p class="text-3xl md:text-7xl">50+</p>
+          <p class="text-xs">CITIES</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="text-3xl md:text-7xl">50,000+</p>
+          <p class="text-xs">TRANSACTIONS</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="text-3xl md:text-7xl">3M+</p>
+          <p class="text-xs">USERS</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="text-3xl md:text-7xl">5</p>
+          <p class="text-xs">USER RATINGS</p>
+        </div>
+      </section>
+
+      <div class="mb-24">
+        <img
+          class="full aspect-[0.9] md:aspect-auto object-cover"
+          src="./images/smiling people.png"
+          alt=""
+        />
+      </div>
+      <section class="text-center px-4 md:px-20 mb-16">
+        <p class="text-secondary_color text-base font-bold mb-4">INTRODUCING</p>
+        <h1 class="text-4xl mb-8 md:text-6xl max-w-lg mx-auto">
+          Introducing RAFT'S Next-Gen Cards
+        </h1>
+
+        <p class="text-sm text-light_grey mb-12 max-w-md mx-auto">
+          Discover RAFT's latest innovation - our new cards. Elevate your
+          banking experience with cutting-edge features, security, and
+          unprecented convenience.
+        </p>
+
+        <div class="full flex justify-center">
+          <img src="./images/atm.png" alt="" />
+        </div>
+
+        <div class="md:flex md:gap-4">
+          <article class="text-left mb-8">
+            <div class="financial_freedom_article_header mb-2">
+              <div><img src="./images/countless technology.svg" alt="" /></div>
+              <p>Contactless Technology</p>
+            </div>
+            <p class="text-sm text-light_grey">
+              Say goodbye to minimum balance fees. Your account, your balance -
+              no hidden charges
+            </p>
+          </article>
+          <article class="text-left mb-8">
+            <div class="financial_freedom_article_header mb-2">
+              <div><img src="./images/personalization.svg" alt="" /></div>
+              <p>Personalization</p>
+            </div>
+            <p class="text-sm text-light_grey">
+              Bank with us without worrying about monthly fees. Keep more of
+              your money where it belongs — in your account
+            </p>
+          </article>
+          <article class="text-left">
+            <div class="financial_freedom_article_header mb-2">
+              <div><img src="./images/enhanced security.svg" alt="" /></div>
+              <p>Enhanced security</p>
+            </div>
+            <p class="text-sm text-light_grey">
+              Seamlessly transfer funds without the extra cost. Send and receive
+              money with zero bank transfer fees.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="bg-secondary_color py-6 text-black">
+        <h1
+          class="text-4xl md:text-6xl md:pt-8 my-20 text-center font-medium md:max-w-lg mx-auto"
+        >
+          Join over 3 million members
+        </h1>
+
+        <div class="flex min-w-full overflow-scroll" id="testimonials">
+          <div class="px-10 testimonial_slide">
+            <div clas="slide-content">
+              <p>
+                RAFT has transformed my approach to finance. Their smart
+                investing options have helped me grow my wealth, and their
+                user-friendly platform makes managing my money a breeze. I've
+                never felt more confident about my financial future.
+              </p>
+
+              <div class="flex mb-8 justify-between">
+                <div>
+                  <p class="text-2xl font-bold">Robert Fox</p>
+                  <p class="text-sm">Happy RAFT User</p>
+                </div>
+                <div>
+                  <img src="./images/testimonial_1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-10 testimonial_slide">
+            <div clas="slide-content">
+              <p>
+                RAFT has transformed my approach to finance. Their smart
+                investing options have helped me grow my wealth, and their
+                user-friendly platform makes managing my money a breeze. I've
+                never felt more confident about my financial future.
+              </p>
+
+              <div class="flex mb-8 justify-between">
+                <div>
+                  <p class="text-2xl font-bold">Robert Fox</p>
+                  <p class="text-sm">Happy RAFT User</p>
+                </div>
+                <div>
+                  <img src="./images/testimonial_1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-10 testimonial_slide">
+            <div clas="slide-content">
+              <p>
+                RAFT has transformed my approach to finance. Their smart
+                investing options have helped me grow my wealth, and their
+                user-friendly platform makes managing my money a breeze. I've
+                never felt more confident about my financial future.
+              </p>
+
+              <div class="flex mb-8 justify-between">
+                <div>
+                  <p class="text-2xl font-bold">Robert Fox</p>
+                  <p class="text-sm">Happy RAFT User</p>
+                </div>
+                <div>
+                  <img src="./images/testimonial_1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end gap-4 mr-4">
+          <button class="bg-white border-2 border-black rounded-full p-4">
+            <img
+              class="rotate-180"
+              src="./images/testimonial_arrow.svg"
+              alt="testimonial_arrow_left"
+            />
+          </button>
+          <button class="bg-white border-2 border-black rounded-full p-4">
+            <img
+              src="./images/testimonial_arrow.svg"
+              alt="testimonial_arrow_right"
+            />
+          </button>
+        </div>
+      </section>
+
+      <section class="mx-4 md:px-20 pt-12 mb-20">
+        <h1 class="text-6xl md:text-8xl mb-10 max-w-2xl">
+          Frequently asked question
+        </h1>
+
+        <div class="flex justify-between items-center">
+          <p>How do I create an account with RAFT?</p>
+          <div><img src="./images/FAQ arrow.svg" alt="" /></div>
+        </div>
+        <p class="mb-4"></p>
+        <hr />
+
+        <div class="flex justify-between items-center">
+          <p>How does RAFT ensure the security of my financial data?</p>
+          <div><img src="./images/FAQ arrow.svg" alt="" /></div>
+        </div>
+        <p class="mb-4"></p>
+        <hr />
+
+        <div class="flex justify-between items-center">
+          <p>What types of transactions can I perform with RAFT?</p>
+          <div><img src="./images/FAQ arrow.svg" alt="" /></div>
+        </div>
+        <p class="mb-4"></p>
+        <hr />
+
+        <div class="flex justify-between items-center">
+          <p>What benefits does RAFT offer for wealth management?</p>
+          <div><img src="./images/FAQ arrow.svg" alt="" /></div>
+        </div>
+        <p class="mb-4"></p>
+        <hr />
+      </section>
+
+      <section class="flex items-center mx-4 md:mx-20 mb-12">
+        <div class="h-full">
+          <img class="w-28" src="./images/company log.svg" alt="" />
+        </div>
+        <h2 class="text-7xl">Raft</h2>
+      </section>
+    </main>
+
+    <hr class="mb-8 mx-6 md:mx-20" />
+
+    <!--footer -->
+    <footer class="mx-6 md:mx-20 mb-10">
+      <div class="md:flex md:gap-12">
+        <section
+          class="flex items-center gap-4 p-4 rounded-md border border-white border-dashed mb-12"
+          id="QRCODE"
+        >
+          <div>
+            <img
+              src="./images/QR_code_for_mobile_English_Wikipedia 1.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <p>Scan to download Apps on the Playstore and Appstore</p>
+            <div class="flex gap-2">
+              <img src="./images/google logo.svg" alt="" />
+              <img src="./images/apple logo.svg" alt="" />
+            </div>
+          </div>
+        </section>
+        <div class="inline-block">
+          <h3 class="text-xl">About us</h3>
+          <p>Our Company</p>
+          <p>Careers</p>
+          <p>Press kits</p>
+        </div>
+        <div class="ml-20 inline-block">
+          <h3 class="text-xl">Legal</h3>
+          <p>terms of use</p>
+          <p>Privacy policy</p>
+          <p>About us</p>
+        </div>
+
+        <div class="mt-12 mb-8 md:mt-0 md:ml-20 md:inline-block">
+          <h3 class="text-xl">Support</h3>
+          <p>Contact us</p>
+          <p>FAQ</p>
+        </div>
+      </div>
+
+      <section class="flex justify-between text-xs">
+        <div class="flex gap-2">
+          <p>English (United Kingdom)</p>
+          <img src="./images/language arrow.svg" alt="" />
+        </div>
+        <div>
+          <p>Raft Corp, LLC</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
