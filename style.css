@@ -16,7 +16,7 @@
   /* box-shadow: 0px -0.12px 0px 0.25px #989898; */
   /* @apply shadow-[0_-0.1px_0px_0.2px_#989898] md:shadow-[0_-0.1px_0px_0.3px_#989898]; */
   animation-name: animate-border;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
   animation-direction: alternate;
