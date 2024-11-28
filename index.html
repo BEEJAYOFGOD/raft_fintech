@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   </head>
-  <body class="bg-[#070606] text-white">
+  <body class="bg-[#070606] text-white overflow-x-clip">
     <header
       class="flex justify-between p-4 md:p-2 items-center border-b-2 border-[#3D3D3D]"
     >
@@ -40,7 +41,7 @@
     </header>
 
     <!-- Main -->
-    <main class="max-w-screen-2xl mx-auto">
+    <main class="max-w-screen-2xl mx-auto overflow-x-clip">
       <section class="text-center py-14 pb-24">
         <button
           id="hero_btn"
@@ -70,7 +71,8 @@
       </section>
 
       <!-- smiling people picture---->
-      <div class="md:mx-8 mx-4 md:mb-20">
+      <div class="md:mx-8 mx-4 md:mb-20"
+      data-aos="fade-up">
         <img
           class="w-full object-cover aspect-[0.8] md:aspect-auto object-center rounded-lg"
           src="./images/happy people desktop.png"
@@ -122,6 +124,7 @@
         <div class="md:flex" id="financial_journey_desktop_first_division">
           <article
             class="text-left px-4 mx-4 md:px-10 md:pb-10 md:ml-20 rounded-lg offset_shadow bg-[#131313] pb-4 mb-8 md:flex-[1.4] relative"
+            data-aos="fade-in"
           >
             <div
               class="flex flex-col gap-4 pt-8 mb-12 bg-seamless_mask bg-cover md:bg-auto bg-no-repeat bg-center"
@@ -173,6 +176,7 @@
             >
               <button
                 class="flex gap-2 items-center bg-[#202020] rounded-l-lg p-2 w-[80%] offset_shadow"
+                data-aos="fade-left"
               >
                 <span
                   ><img src="./images/cryptocurrency.svg" alt="crypto image"
@@ -181,6 +185,7 @@
               </button>
               <button
                 class="flex gap-2 items-center rounded-l-lg p-2 w-[90%] bg-[#202020] offset_shadow"
+                data-aos="fade-left"
               >
                 <span
                   ><img
@@ -190,8 +195,10 @@
                 <p>Smart Portfolio Investing</p>
               </button>
               <button
+                
                 id="sustainable"
                 class="flex gap-2 items-center rounded-l-lg p-2 w-[80%] bg-[#202020] offset_shadow"
+                data-aos="fade-left"
               >
                 <span
                   ><img
@@ -219,6 +226,7 @@
         <div class="md:flex" id="financial_journey_desktop_second_division">
           <article
             class="px-4 md:px-10 md:pb-10 mx-4 md:ml-20 offset_shadow rounded-lg text-left pb-4 mb-8 bg-article_dark_grey md:mb-0 md:flex-[0.6] relative"
+            data-aos="fade-right"
           >
             <div class="bg-article-mask pt-20 mb-12">
               <div class="bg-[#202020] rounded-lg p-4 offset_shadow">
@@ -260,6 +268,7 @@
 
           <article
             class="offset_shadow mx-4 px-4 md:px-10 pb-4 md:pb-10 md:mr-20 rounded-lg bg-article_dark_grey text-left md:flex-[1.4] relative"
+            data-aos="fade-left"
           >
             <div class="bg-financial_plan_mask_dsktop pt-12 bg-cover mb-8 -z-0">
               <div class="flex justify-between md:justify-center gap-3 mb-3">
@@ -328,7 +337,8 @@
         </p>
 
         <!-- financial freedom people smiling-->
-        <div class="mx-auto mb-12">
+        <div class="mx-auto mb-12"
+        data-aos="fade-up">
           <img
             class="w-full md:hidden flex"
             src="./images/financial freedom mobile.png"
@@ -409,6 +419,7 @@
         <div class="md:flex md:gap-8">
           <article
             class="bg-article_dark_grey p-4 md:p-10 rounded-lg mb-8 md:mb-0 offset_shadow"
+            data-aos="fade-right"
           >
             <h2 class="mb-4 text-3xl">Spend better</h2>
             <p class="text-light_grey">
@@ -425,6 +436,7 @@
           </article>
           <article
             class="bg-article_dark_grey p-4 md:p-10 rounded-lg offset_shadow"
+            data-aos="fade-left"
           >
             <h2 class="text-3xl mb-4">Invest better</h2>
             <p class="text-light_grey">
@@ -466,7 +478,8 @@
       </section>
 
       <!--Happy people taking a selfie-->
-      <div class="mb-24">
+      <div class="mb-24"
+      data-aos="fade-up">
         <img
           class="full aspect-[0.9] md:aspect-auto object-cover"
           src="./images/smiling people.png"
@@ -487,7 +500,8 @@
           unprecented convenience.
         </p>
 
-        <div class="full flex justify-center">
+        <div class="full flex justify-center"
+        data-aos="fade-up">
           <img src="./images/atm.png" alt="credit card" />
         </div>
 
@@ -624,29 +638,7 @@
 
           <!-- second sectiion-->
           <section class="flex md:min-w-full">
-            <div class="testimonial_slide">
-              <article clas="slide-content">
-                <p>
-                  RAFT has transformed my approach to finance. Their smart
-                  investing options have helped me grow my wealth, and their
-                  user-friendly platform makes managing my money a breeze. I've
-                  never felt more confident about my financial future.
-                </p>
-
-                <div class="flex mb-8 justify-between">
-                  <div>
-                    <p class="text-2xl font-bold">Robert Fox</p>
-                    <p class="text-sm">Happy RAFT User</p>
-                  </div>
-                  <div>
-                    <img
-                      src="./images/testimonial_1.png"
-                      alt="testimonial - 4"
-                    />
-                  </div>
-                </div>
-              </article>
-            </div>
+            
 
             <div class="testimonial_slide">
               <article class="slide-content">
@@ -690,6 +682,30 @@
                     <img
                       src="./images/testimonial_3.png"
                       alt="testimonial - 6"
+                    />
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="testimonial_slide">
+              <article clas="slide-content">
+                <p>
+                  RAFT has transformed my approach to finance. Their smart
+                  investing options have helped me grow my wealth, and their
+                  user-friendly platform makes managing my money a breeze. I've
+                  never felt more confident about my financial future.
+                </p>
+
+                <div class="flex mb-8 justify-between">
+                  <div>
+                    <p class="text-2xl font-bold">Robert Fox</p>
+                    <p class="text-sm">Happy RAFT User</p>
+                  </div>
+                  <div>
+                    <img
+                      src="./images/testimonial_1.png"
+                      alt="testimonial - 4"
                     />
                   </div>
                 </div>
@@ -772,18 +788,19 @@
         <!-- testimonial buttons -->
         <div class="flex justify-end gap-4 mr-4" id="testimonial_btns">
           <button
-            class="bg-white border-2 border-black rounded-full p-4 testimonial_left"
+            class="bg-white border-2 border-black rounded-full p-2 md:p-4 testimonial_left flex items-center justify-center group"
           >
             <img
-              class="rotate-180"
+              class="rotate-180 w-full h-full md:group-hover:-translate-x-1 md:group-hover:ease-in duration-100"
               src="./images/testimonial_arrow.svg"
               alt="testimonial_arrow_left"
             />
           </button>
           <button
-            class="bg-white border-2 border-black rounded-full p-4 testimonial_right"
+            class="bg-white border-2 border-black rounded-full p-2 md:p-4 testimonial_right flex items-center justify-center group"
           >
             <img
+            class="w-full h-full flex items-center justify-center md:group-hover:translate-x-1 md:group-hover:ease-in duration-100"
               src="./images/testimonial_arrow.svg"
               alt="testimonial_arrow_right"
             />
@@ -792,11 +809,14 @@
       </section>
 
       <!-- FAQ ( Frequently Asked Questions ) section-->
-      <section class="mx-4 md:px-20 pt-12 mb-20" id="FAQ">
-        <h1 class="text-6xl md:text-8xl mb-10 max-w-2xl">
+      <section class="mx-4 md:px-20 pt-12 mb-20" id="FAQ" data-aos="fade-right">
+        <h1 class="text-6xl md:text-8xl mb-10 max-w-2xl"
+      >
           Frequently asked question
         </h1>
 
+        
+        
         <div class="faq_article">
           <p>How do I create an account with RAFT?</p>
           <button class="faq_arrow"><img src="./images/FAQ arrow.svg" alt="faq arrow" /></button>
@@ -827,7 +847,7 @@
       </section>
 
       <!-- Compnay Logo bfr Footer-->
-      <section class="flex items-center mx-4 md:mx-20 mb-12">
+      <section class="flex items-center mx-4 md:mx-20 mb-12" >
         <div class="h-full">
           <img class="w-28" src="./images/company log.svg" alt="company logo" />
         </div>
@@ -891,5 +911,12 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
