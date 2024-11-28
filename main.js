@@ -1,7 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 const testimonial_btns = document.querySelector("#testimonial_btns");
-// const testimonails_container = document.querySelector("#testimonials");
 const testimonail_slides = document.querySelectorAll(".testimonial_slide");
 const faq_questions = Array.from(document.querySelectorAll(".faq_article"));
 const faq_answers = Array.from(document.querySelectorAll(".faq_ans"));
@@ -11,7 +10,6 @@ const faq_arrows = Array.from(document.querySelectorAll(".faq_arrow"));
 AOS.init({
   offset: 200,
   duration: 1000, // Animation duration (in ms)
-  once: true, // Whether animation should happen only once
 });
 
 faq_questions.forEach((question) => {
