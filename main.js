@@ -5,23 +5,42 @@ const faq_questions = Array.from(document.querySelectorAll(".faq_article"));
 const faq_answers = Array.from(document.querySelectorAll(".faq_ans"));
 const faq_arrows = Array.from(document.querySelectorAll(".faq_arrow"));
 
+// faq_questions.forEach((question) => {
+//   question.addEventListener("click", () => {
+//     const arrow_index = faq_questions.indexOf(question);
+//     const current_faq_answer = faq_answers[arrow_index];
+//     const current_faq_arrow = faq_arrows[arrow_index];
+//     const faq_questionisHidden =
+//       current_faq_answer.classList.contains("hidden");
+
+//     alert("helllo");
+//     if (faq_questionisHidden) {
+//       current_faq_answer.classList.replace(`hidden`, `flex`);
+//       current_faq_arrow.classList.add("rotate-180");
+//       // faq_answer.classList.add("")
+//     } else {
+//       current_faq_answer.classList.replace(`flex`, `hidden`);
+//       current_faq_arrow.classList.replace("rotate-180", "rotate-0");
+//     }
+//   });
+// });
+
 faq_questions.forEach((question) => {
   question.addEventListener("click", () => {
     const arrow_index = faq_questions.indexOf(question);
     const current_faq_answer = faq_answers[arrow_index];
     const current_faq_arrow = faq_arrows[arrow_index];
-    const faq_questionisHidden =
-      current_faq_answer.classList.contains("hidden");
 
-    alert("helllo");
-    if (faq_questionisHidden) {
-      current_faq_answer.classList.replace(`hidden`, `flex`);
-      current_faq_arrow.classList.add("rotate-180");
-      // faq_answer.classList.add("")
-    } else {
-      current_faq_answer.classList.replace(`flex`, `hidden`);
-      current_faq_arrow.classList.replace("rotate-180", "rotate-0");
-    }
+    // Replace alert with console.log for mobile debugging
+    console.log("FAQ clicked", {
+      arrow_index,
+      current_faq_answer,
+      current_faq_arrow,
+    });
+
+    current_faq_answer.classList.toggle("hidden");
+    current_faq_answer.classList.toggle("flex");
+    current_faq_arrow.classList.toggle("rotate-180");
   });
 });
 
@@ -51,23 +70,15 @@ function moveToSlideIndex() {
 calculateNoOfMoves();
 
 testimonial_btns.addEventListener("click", (e) => {
+  
   const button = e.target.closest(".testimonial_right, .testimonial_left");
+  if (!button) return; // Early exit if no button is clicked
 
-  if (button) {
-    if (button.classList.contains("testimonial_right")) {
-      if (index < no_of_moves) {
-        index += 1;
-      } else {
-        index = 0;
-      }
-    } else if (button.classList.contains("testimonial_left")) {
-      if (index === 0) {
-        index = no_of_moves;
-      } else {
-        index -= 1;
-      }
-    }
-
-    moveToSlideIndex();
+  if (button.classList.contains("testimonial_right")) {
+    index = index < no_of_moves ? index + 1 : 0;
+  } else {
+    index = index === 0 ? no_of_moves : index - 1;
   }
+
+  moveToSlideIndex();
 });
