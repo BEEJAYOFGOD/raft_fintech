@@ -12,7 +12,11 @@
     >
       <div class="flex items-center">
         <div id="logo-icon">
-          <img class="md:w-12" src="./images/company log.svg" alt="" />
+          <img
+            class="md:w-12"
+            src="./images/company log.svg"
+            alt="company logo"
+          />
         </div>
         <h1 class="md:text-3xl">Raft</h1>
       </div>
@@ -31,10 +35,11 @@
       </nav>
 
       <div class="md:hidden flex">
-        <img src="./images/mobile-menu.svg" alt="" />
+        <img src="./images/mobile-menu.svg" alt="mobile menu btn" />
       </div>
     </header>
 
+    <!-- Main -->
     <main class="max-w-screen-2xl mx-auto">
       <section class="text-center py-14 pb-24">
         <button
@@ -42,7 +47,8 @@
           class="mx-auto gap-1 rounded-full px-4 py-1 bg-[#202020] offset_shadow"
         >
           <span class="flex gap-4 items-center"
-            >Introducing Raft Cards <img src="./images/hero-arrow.svg" alt=""
+            >Introducing Raft Cards
+            <img src="./images/hero-arrow.svg" alt="right arrow key"
           /></span>
         </button>
         <div
@@ -62,8 +68,8 @@
           </button>
         </div>
       </section>
-      <!-- <div class="bg-hero h-[300px]"></div> -->
-      <!-- <img src="./images/hero_mask.svg" alt="" /> -->
+
+      <!-- smiling people picture---->
       <div class="md:mx-8 mx-4 md:mb-20">
         <img
           class="w-full object-cover aspect-[0.8] md:aspect-auto object-center rounded-lg"
@@ -73,7 +79,7 @@
       </div>
 
       <!----carousel slider-->
-      <section class="text-center mt-8 mb-32" id="carousel">
+      <section class="text-center mt-8 mb-32" id="carousel_companies">
         <h3 class="text-light_grey">FEATURED AND SEEN IN</h3>
         <div
           id="carousel_slide"
@@ -101,6 +107,7 @@
         </div>
       </section>
 
+      <!--- Financial Jounrey -->
       <section class="text-center mb-32">
         <h1 class="text-4xl md:text-6xl mb-8 max-w-2xl mx-auto">
           Elevate Your financial Journey with RAFT
@@ -111,6 +118,7 @@
           potential today.
         </p>
 
+        <!-- FInancial Jounrey first division -->
         <div class="md:flex" id="financial_journey_desktop_first_division">
           <article
             class="text-left px-4 mx-4 md:px-10 md:pb-10 md:ml-20 rounded-lg offset_shadow bg-[#131313] pb-4 mb-8 md:flex-[1.4] relative"
@@ -120,19 +128,25 @@
             >
               <button class="seamless">
                 <span class="bg-[#202020] p-2 rounded-lg"
-                  ><img src="./images/seamless payment arrow.svg" alt=""
+                  ><img
+                    src="./images/seamless payment arrow.svg"
+                    alt="seamless arrow"
                 /></span>
                 <p class="text-xs">+$22.15 Received from Nguyen Shane</p>
               </button>
               <button class="seamless">
                 <span class="bg-[#202020] p-2 rounded-lg"
-                  ><img src="./images/seamless payment arrow.svg" alt=""
+                  ><img
+                    src="./images/seamless payment arrow.svg"
+                    alt="seamless arrow"
                 /></span>
                 <p class="text-xs">+$300.52 Received from Cooper Kristin</p>
               </button>
               <button class="seamless">
                 <span class="bg-[#202020] p-2 rounded-lg"
-                  ><img src="./images/seamless payment arrow.svg" alt=""
+                  ><img
+                    src="./images/seamless payment arrow.svg"
+                    alt="seamless arrow"
                 /></span>
                 <p class="text-xs">+$50.00 Received from Miles Esther</p>
               </button>
@@ -150,6 +164,7 @@
               a breeze
             </p>
           </article>
+
           <article
             class="pl-4 mx-4 md:mr-20 pb-4 md:pl-10 md:pb-10 text-left rounded-lg offset_shadow bg-article_dark_grey mb-8 md:flex-[0.6] relative"
           >
@@ -159,14 +174,14 @@
               <button
                 class="flex gap-2 items-center bg-[#202020] rounded-l-lg p-2 w-[80%] offset_shadow"
               >
-                <span><img src="./images/cryptocurrency.svg" alt="" /></span>
+                <span><img src="./images/cryptocurrency.svg" alt="crypto image" /></span>
                 <p>Cryptocurrrency</p>
               </button>
               <button
                 class="flex gap-2 items-center rounded-l-lg p-2 w-[90%] bg-[#202020] offset_shadow"
               >
                 <span
-                  ><img src="./images/smart portolio invest.svg" alt=""
+                  ><img src="./images/smart portolio invest.svg" alt="investment image"
                 /></span>
                 <p>Smart Portfolio Investing</p>
               </button>
@@ -180,9 +195,12 @@
                 <p>Sustainable Investing</p>
               </button>
             </div>
+
+            <!-- article overlay -->
             <div
               class="absolute w-full left-0 -mt-[180px] z-10 h-[150px] bg-gradient-to-b from-transparent to-[#131313]"
             ></div>
+
             <h2 class="text-2xl mr-4 mb-4">Smart Investing</h2>
             <p class="mr-4 text-sm text-light_grey">
               Grow your wealth confidently with our personalized investment
@@ -191,7 +209,8 @@
           </article>
         </div>
 
-        <div class="md:flex">
+        <!-- financial journey second division-->
+        <div class="md:flex" id="financial_journey_desktop_second_division">
           <article
             class="px-4 md:px-10 md:pb-10 mx-4 md:ml-20 offset_shadow rounded-lg text-left pb-4 mb-8 bg-article_dark_grey md:mb-0 md:flex-[0.6] relative"
           >
@@ -220,6 +239,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- article overlay -->
             <div
               class="absolute w-full left-0 -mt-[180px] md:-mt-[200px] z-10 h-[180px] bg-gradient-to-b from-transparent to-[#131313]"
             ></div>
@@ -258,6 +279,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- articl overlay -->
             <div
               class="absolute w-full left-0 -mt-[200px] z-10 h-[200px] bg-gradient-to-b from-transparent to-[#131313]"
             ></div>
@@ -279,19 +302,21 @@
           cost-effective. That's why we offer you the freedom you deserve
         </p>
 
+        <!-- financial freedom people smiling-->
         <div class="mx-auto mb-12">
           <img
             class="w-full md:hidden flex"
             src="./images/financial freedom mobile.png"
-            alt=""
+            alt="smiling free people"
           />
           <img
             class="w-full md:flex hidden"
             src="./images/financial freedom desktop.png"
-            alt=""
+            alt="smiling free people"
           />
         </div>
 
+        <!--- financial freedom tiny articles -->
         <div class="md:flex md:gap-4">
           <article class="text-left mb-8">
             <div class="financial_freedom_article_header">
@@ -326,6 +351,7 @@
         </div>
       </section>
 
+      <!-- smart investment message and header-->
       <section
         class="px-4 md:px-12 py-6 md:py-24 bg-secondary_color text-black mb-14"
       >
@@ -335,6 +361,7 @@
         </h1>
       </section>
 
+      <!-- Financial futures section -->
       <section class="px-4 md:px-20 mb-8">
         <h1 class="text-4xl md:text-6xl mb-8 md:max-w-xl">
           Confidently Shape Your Financial Future
@@ -396,13 +423,16 @@
         </div>
       </section>
 
+      <!--Happy people taking a selfie-->
       <div class="mb-24">
         <img
           class="full aspect-[0.9] md:aspect-auto object-cover"
           src="./images/smiling people.png"
-          alt=""
+          alt="smiling people taking a selfie"
         />
       </div>
+
+      <!--Raft card introduction section-->
       <section class="text-center px-4 md:px-20 mb-16">
         <p class="text-secondary_color text-base font-bold mb-4">INTRODUCING</p>
         <h1 class="text-4xl mb-8 md:text-6xl max-w-lg mx-auto">
@@ -453,6 +483,7 @@
         </div>
       </section>
 
+      <!-- testimonial section -->
       <section class="bg-secondary_color py-6 text-black">
         <h1
           class="text-4xl md:text-6xl md:pt-8 my-20 text-center font-medium md:max-w-lg mx-auto"
@@ -460,79 +491,221 @@
           Join over 3 million members
         </h1>
 
-        <div class="flex min-w-full overflow-scroll" id="testimonials">
-          <div class="px-10 testimonial_slide">
-            <div clas="slide-content">
-              <p>
-                RAFT has transformed my approach to finance. Their smart
-                investing options have helped me grow my wealth, and their
-                user-friendly platform makes managing my money a breeze. I've
-                never felt more confident about my financial future.
-              </p>
+        <div class="flex min-w-full overflow-x-clip" id="testimonials">
+          <!-- first sectiion-->
+          <section class="flex md:min-w-full">
+            <div class="testimonial_slide">
+              <article clas="slide-content">
+                <p>
+                  RAFT has transformed my approach to finance. Their smart
+                  investing options have helped me grow my wealth, and their
+                  user-friendly platform makes managing my money a breeze. I've
+                  never felt more confident about my financial future.
+                </p>
 
-              <div class="flex mb-8 justify-between">
-                <div>
-                  <p class="text-2xl font-bold">Robert Fox</p>
-                  <p class="text-sm">Happy RAFT User</p>
+                <div class="flex mb-8 justify-between">
+                  <div>
+                    <p class="text-2xl font-bold">Robert Fox</p>
+                    <p class="text-sm">Happy RAFT User</p>
+                  </div>
+                  <div>
+                    <img src="./images/testimonial_1.png" alt="" />
+                  </div>
                 </div>
-                <div>
-                  <img src="./images/testimonial_1.png" alt="" />
-                </div>
-              </div>
+              </article>
             </div>
-          </div>
-          <div class="px-10 testimonial_slide">
-            <div clas="slide-content">
-              <p>
-                RAFT has transformed my approach to finance. Their smart
-                investing options have helped me grow my wealth, and their
-                user-friendly platform makes managing my money a breeze. I've
-                never felt more confident about my financial future.
-              </p>
 
-              <div class="flex mb-8 justify-between">
-                <div>
-                  <p class="text-2xl font-bold">Robert Fox</p>
-                  <p class="text-sm">Happy RAFT User</p>
+            <div class="testimonial_slide">
+              <article class="slide-content">
+                <p>
+                  RAFT has transformed my approach to finance. Their smart
+                  investing options have helped me grow my wealth, and their
+                  user-friendly platform makes managing my money a breeze. I've
+                  never felt more confident about my financial future.
+                </p>
+
+                <div class="flex mb-8 justify-between">
+                  <div>
+                    <p class="text-2xl font-bold">Robert Fox</p>
+                    <p class="text-sm">Happy RAFT User</p>
+                  </div>
+                  <div>
+                    <img src="./images/testimonial_2.png" alt="" />
+                  </div>
                 </div>
-                <div>
-                  <img src="./images/testimonial_1.png" alt="" />
-                </div>
-              </div>
+              </article>
             </div>
-          </div>
 
-          <div class="px-10 testimonial_slide">
-            <div clas="slide-content">
-              <p>
-                RAFT has transformed my approach to finance. Their smart
-                investing options have helped me grow my wealth, and their
-                user-friendly platform makes managing my money a breeze. I've
-                never felt more confident about my financial future.
-              </p>
+            <div class="testimonial_slide">
+              <article clas="slide-content">
+                <p>
+                  RAFT has transformed my approach to finance. Their smart
+                  investing options have helped me grow my wealth, and their
+                  user-friendly platform makes managing my money a breeze. I've
+                  never felt more confident about my financial future.
+                </p>
 
-              <div class="flex mb-8 justify-between">
-                <div>
-                  <p class="text-2xl font-bold">Robert Fox</p>
-                  <p class="text-sm">Happy RAFT User</p>
+                <div class="flex mb-8 justify-between">
+                  <div>
+                    <p class="text-2xl font-bold">Robert Fox</p>
+                    <p class="text-sm">Happy RAFT User</p>
+                  </div>
+                  <div>
+                    <img src="./images/testimonial_3.png" alt="" />
+                  </div>
                 </div>
-                <div>
-                  <img src="./images/testimonial_1.png" alt="" />
-                </div>
-              </div>
+              </article>
             </div>
-          </div>
+          </section>
+
+          <!-- second sectiion-->
+          <section class="flex md:min-w-full">
+            <div class="testimonial_slide">
+              <article clas="slide-content">
+                <p>
+                  RAFT has transformed my approach to finance. Their smart
+                  investing options have helped me grow my wealth, and their
+                  user-friendly platform makes managing my money a breeze. I've
+                  never felt more confident about my financial future.
+                </p>
+
+                <div class="flex mb-8 justify-between">
+                  <div>
+                    <p class="text-2xl font-bold">Robert Fox</p>
+                    <p class="text-sm">Happy RAFT User</p>
+                  </div>
+                  <div>
+                    <img src="./images/testimonial_1.png" alt="" />
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="testimonial_slide">
+              <article class="slide-content">
+                <p>
+                  RAFT has transformed my approach to finance. Their smart
+                  investing options have helped me grow my wealth, and their
+                  user-friendly platform makes managing my money a breeze. I've
+                  never felt more confident about my financial future.
+                </p>
+
+                <div class="flex mb-8 justify-between">
+                  <div>
+                    <p class="text-2xl font-bold">Robert Fox</p>
+                    <p class="text-sm">Happy RAFT User</p>
+                  </div>
+                  <div>
+                    <img src="./images/testimonial_2.png" alt="" />
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="testimonial_slide">
+              <article clas="slide-content">
+                <p>
+                  RAFT has transformed my approach to finance. Their smart
+                  investing options have helped me grow my wealth, and their
+                  user-friendly platform makes managing my money a breeze. I've
+                  never felt more confident about my financial future.
+                </p>
+
+                <div class="flex mb-8 justify-between">
+                  <div>
+                    <p class="text-2xl font-bold">Robert Fox</p>
+                    <p class="text-sm">Happy RAFT User</p>
+                  </div>
+                  <div>
+                    <img src="./images/testimonial_3.png" alt="" />
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="flex md:min-w-full">
+            <div class="testimonial_slide">
+              <article clas="slide-content">
+                <p>
+                  RAFT has transformed my approach to finance. Their smart
+                  investing options have helped me grow my wealth, and their
+                  user-friendly platform makes managing my money a breeze. I've
+                  never felt more confident about my financial future.
+                </p>
+
+                <div class="flex mb-8 justify-between">
+                  <div>
+                    <p class="text-2xl font-bold">Robert Fox</p>
+                    <p class="text-sm">Happy RAFT User</p>
+                  </div>
+                  <div>
+                    <img src="./images/testimonial_2.png" alt="" />
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="testimonial_slide">
+              <article clas="slide-content">
+                <p>
+                  RAFT has transformed my approach to finance. Their smart
+                  investing options have helped me grow my wealth, and their
+                  user-friendly platform makes managing my money a breeze. I've
+                  never felt more confident about my financial future.
+                </p>
+
+                <div class="flex mb-8 justify-between">
+                  <div>
+                    <p class="text-2xl font-bold">Robert Fox</p>
+                    <p class="text-sm">Happy RAFT User</p>
+                  </div>
+                  <div>
+                    <img src="./images/testimonial_1.png" alt="" />
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="testimonial_slide">
+              <article clas="slide-content">
+                <p>
+                  RAFT has transformed my approach to finance. Their smart
+                  investing options have helped me grow my wealth, and their
+                  user-friendly platform makes managing my money a breeze. I've
+                  never felt more confident about my financial future.
+                </p>
+
+                <div class="flex mb-8 justify-between">
+                  <div>
+                    <p class="text-2xl font-bold">Robert Fox</p>
+                    <p class="text-sm">Happy RAFT User</p>
+                  </div>
+                  <div>
+                    <img src="./images/testimonial_3.png" alt="" />
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
         </div>
-        <div class="flex justify-end gap-4 mr-4">
-          <button class="bg-white border-2 border-black rounded-full p-4">
+
+        <!-- testimonial buttons -->
+        <div class="flex justify-end gap-4 mr-4" id="testimonial_btns">
+          <button
+            class="bg-white border-2 border-black rounded-full p-4 testimonial_left"
+          >
             <img
-              class="rotate-180"
+              class="rotate-180 testimonial_left"
               src="./images/testimonial_arrow.svg"
               alt="testimonial_arrow_left"
             />
           </button>
-          <button class="bg-white border-2 border-black rounded-full p-4">
+          <button
+            class="bg-white border-2 border-black rounded-full p-4 testimonial_right"
+          >
             <img
+              class="testimonial_right"
               src="./images/testimonial_arrow.svg"
               alt="testimonial_arrow_right"
             />
@@ -540,6 +713,7 @@
         </div>
       </section>
 
+      <!-- FAQ ( Frequently Asked Questions ) section-->
       <section class="mx-4 md:px-20 pt-12 mb-20">
         <h1 class="text-6xl md:text-8xl mb-10 max-w-2xl">
           Frequently asked question
@@ -574,9 +748,10 @@
         <hr />
       </section>
 
+      <!-- Compnay Logo bfr Footer-->
       <section class="flex items-center mx-4 md:mx-20 mb-12">
         <div class="h-full">
-          <img class="w-28" src="./images/company log.svg" alt="" />
+          <img class="w-28" src="./images/company log.svg" alt="company logo" />
         </div>
         <h2 class="text-7xl">Raft</h2>
       </section>
@@ -600,8 +775,8 @@
           <div>
             <p>Scan to download Apps on the Playstore and Appstore</p>
             <div class="flex gap-2">
-              <img src="./images/google logo.svg" alt="" />
-              <img src="./images/apple logo.svg" alt="" />
+              <img src="./images/google logo.svg" alt="play games" />
+              <img src="./images/apple logo.svg" alt="apple store" />
             </div>
           </div>
         </section>
@@ -628,12 +803,14 @@
       <section class="flex justify-between text-xs">
         <div class="flex gap-2">
           <p>English (United Kingdom)</p>
-          <img src="./images/language arrow.svg" alt="" />
+          <img src="./images/language arrow.svg" alt="arrow key" />
         </div>
         <div>
           <p>Raft Corp, LLC</p>
         </div>
       </section>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>

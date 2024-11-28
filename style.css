@@ -48,8 +48,6 @@ article.offset_shadow {
 }
 
 .testimonial_slide {
-  /* position: relative;
-  display: flex;
-  gap: 12px; */
-  @apply flex gap-4 relative min-w-full md:min-w-min bg-secondary_color before:content-[''] before:md:border before:md:border-black;
+  @apply flex gap-4 relative px-8 w-screen md:min-w-min  bg-secondary_color before:content-[''] before:md:border before:md:border-black;
+  @apply transition-transform duration-300 ease-in-out;
 }
