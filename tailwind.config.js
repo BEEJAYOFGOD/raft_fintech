@@ -11,7 +11,7 @@ export default {
       },
       colors: {
         light_grey: "#BDBDBD",
-        green_intro: "#2B892E",
+        green_intro: "#2B892E", // dark green
         secondary_color: "#48D64C", // light green
       },
       backgroundImage: {

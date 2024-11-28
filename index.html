@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   </head>
   <body class="bg-[#070606] text-white overflow-x-clip">
     <header
@@ -30,7 +30,7 @@
       </nav>
       <nav class="hidden md:flex gap-2 items-center">
         <a href="">Login</a>
-        <a class="bg-hero_green rounded-full p-2 md:px-4 text-sm" href=""
+        <a class="bg-hero_green rounded-full p-2 md:px-4 text-sm hover:bg-secondary_color hover:bg-opacity-75 active:bg-opacity-95" href=""
           >Get Started</a
         >
       </nav>
@@ -42,7 +42,7 @@
 
     <!-- Main -->
     <main class="max-w-screen-2xl mx-auto overflow-x-clip">
-      <section class="text-center py-14 pb-24">
+      <section class="text-center py-14 md:pb-24 md:pb-4">
         <button
           id="hero_btn"
           class="mx-auto gap-1 rounded-full px-4 py-1 bg-[#202020] offset_shadow md:hover:px-8 group ease-linear duration-300"
@@ -65,7 +65,7 @@
             Experience the future of banking with RAFT. We're here to empower
             your financial journey
           </p>
-          <button class="bg-hero_green px-12 py-4 rounded-full">
+          <button class="bg-hero_green px-12 py-4 rounded-full hover:bg-secondary_color hover:bg-opacity-75 active:bg-opacity-95">
             Get Started
           </button>
         </div>
@@ -503,16 +503,17 @@
         </p>
 
         
-        <div class="full flex gap-2 group justify-center hover:justify-center"
+        <div class="full flex gap-2 group justify-center md:hover:justify-center cursor-pointer"
         data-aos="fade-up">
-          <div class="-mr-96 z-0 -rotate-12 hidden group-hover:flex animate_pulse">
+          <div class="-mr-96 z-0 -rotate-12 opacity-0 md:group-hover:opacity-100 transition md:group-hover:duration-1000 duration-200 ease-in-out">
             <img class=" grayscale " src="./images/atm.png" alt="credit card" />
           </div>
         
           <div class="z-10">
             <img  src="./images/atm.png" alt="credit card" />
           </div>
-          <div class="-ml-96 z-0  rotate-12 hidden group-hover:flex animate_pulse">
+
+          <div id="test" class="-ml-96 z-0 rotate-12 opacity-0 md:group-hover:opacity-100 transition md:group-hover:duration-1000 duration-200 ease-in-out">
             <img class="grayscale" src="./images/atm.png" alt="credit card" />
           </div>
         </div>
@@ -829,31 +830,31 @@
 
         
         
-        <div class="faq_article">
+        <article class="faq_article">
           <p>How do I create an account with RAFT?</p>
           <button class="faq_arrow"><img src="./images/FAQ arrow.svg" alt="faq arrow" /></button>
-        </div>
+        </article>
         <p class="faq_ans hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam libero, laboriosam enim vitae provident mollitia cumque in aperiam? A temporibus dolor eveniet tempora. Exercitationem et eveniet officiis iure veritatis est.</p>
         <hr />
 
-        <div class="faq_article">
+        <article class="faq_article">
           <p>How does RAFT ensure the security of my financial data?</p>
           <button class="faq_arrow"><img src="./images/FAQ arrow.svg" alt="faq arrow" /></button>
-        </div>
+        </article>
         <p class="faq_ans hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fuga, quasi officiis minus repellat voluptas eum nulla, odio nihil natus illum sint ad, molestias omnis! Quae vero obcaecati veniam repellendus?</p>
         <hr />
 
-        <div class="faq_article">
+        <article class="faq_article">
           <p>What types of transactions can I perform with RAFT?</p>
           <button class="faq_arrow"><img src="./images/FAQ arrow.svg" alt="faq arrow" /></button>
-        </div>
+        </article>
         <p class="faq_ans hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores natus impedit ex numquam nostrum inventore necessitatibus delectus vero odit accusantium dolorem molestias maiores, excepturi ipsum obcaecati tempora temporibus magnam! Aperiam.</p>
         <hr />
 
-        <div class="faq_article">
+        <article class="faq_article">
           <p>What benefits does RAFT offer for wealth management?</p>
           <button class="faq_arrow"><img src="./images/FAQ arrow.svg" alt="faq arrow" /></button>
-        </div>
+        </article>
         <p class="faq_ans hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi soluta eius alias nostrum dignissimos, rem minima tempore officia! At distinctio odit blanditiis in rerum consequatur beatae totam voluptatum perferendis sapiente?</p>
         <hr />
       </section>
@@ -922,13 +923,13 @@
       </section>
     </footer>
 
-    <!-- <script src="main.js"></script>
+    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         offset: 200,
         duration: 1000
       });
-    </script> -->
+    </script>
   </body>
 </html>
