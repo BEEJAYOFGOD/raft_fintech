@@ -26,41 +26,47 @@ faq_questions.forEach((question) => {
 
 let index = 0;
 let no_of_moves;
+
+function isMobileView() {
+  return window.innerWidth <= 740;
+}
+
+function calculateNoOfMoves() {
+  no_of_moves = isMobileView()
+    ? testimonail_slides.length - 1
+    : Math.floor(testimonail_slides.length / 3) - 1;
+}
+
 function moveToSlideIndex() {
+  calculateNoOfMoves(); // Always recalculate
   testimonail_slides.forEach((slide) => {
-    slide.style.transform = window.matchMedia("(max-width: 740px)").matches
+    slide.style.transform = isMobileView()
       ? `translateX(-${index * 100}%)`
       : `translateX(-${index * 300}%)`;
   });
 }
 
-no_of_moves = window.matchMedia("(max-width: 740px)").matches
-  ? testimonail_slides.length - 1
-  : testimonail_slides.length / 3 - 1;
-
-window.addEventListener("resize", () => {
-  no_of_moves = window.matchMedia("(max-width: 740px)").matches
-    ? testimonail_slides.length - 1
-    : testimonail_slides.length / 3 - 1;
-});
+window.addEventListener("resize", moveToSlideIndex); // Simplified resize handling
+calculateNoOfMoves();
 
 testimonial_btns.addEventListener("click", (e) => {
-  if (e.target.classList.contains("testimonial_right")) {
-    alert("hey");
-    if (index < no_of_moves) {
-      index += 1;
-      moveToSlideIndex();
-    } else if (index == no_of_moves) {
-      index = 0;
-      moveToSlideIndex();
+  const button = e.target.closest(".testimonial_right, .testimonial_left");
+
+  if (button) {
+    if (button.classList.contains("testimonial_right")) {
+      if (index < no_of_moves) {
+        index += 1;
+      } else {
+        index = 0;
+      }
+    } else if (button.classList.contains("testimonial_left")) {
+      if (index === 0) {
+        index = no_of_moves;
+      } else {
+        index -= 1;
+      }
     }
-  } else {
-    if (index == 0) {
-      index = no_of_moves;
-      moveToSlideIndex();
-    } else {
-      index -= 1;
-      moveToSlideIndex();
-    }
+
+    moveToSlideIndex();
   }
 });

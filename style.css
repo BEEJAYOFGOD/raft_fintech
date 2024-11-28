@@ -57,7 +57,7 @@ li a {
 }
 
 .faq_article {
-  @apply gap-6 flex justify-between items-center;
+  @apply gap-6 flex justify-between items-center cursor-pointer;
 }
 
 .faq_ans {
