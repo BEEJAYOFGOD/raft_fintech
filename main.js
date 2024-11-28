@@ -10,6 +10,7 @@ const faq_arrows = Array.from(document.querySelectorAll(".faq_arrow"));
 AOS.init({
   offset: 200,
   duration: 1000, // Animation duration (in ms)
+ // Whether animation should happen only once
 });
 
 faq_questions.forEach((question) => {
