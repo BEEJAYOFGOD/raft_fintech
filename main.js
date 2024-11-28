@@ -1,29 +1,18 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 const testimonial_btns = document.querySelector("#testimonial_btns");
-const testimonails_container = document.querySelector("#testimonials");
+// const testimonails_container = document.querySelector("#testimonials");
 const testimonail_slides = document.querySelectorAll(".testimonial_slide");
 const faq_questions = Array.from(document.querySelectorAll(".faq_article"));
 const faq_answers = Array.from(document.querySelectorAll(".faq_ans"));
 const faq_arrows = Array.from(document.querySelectorAll(".faq_arrow"));
 
-// faq_questions.forEach((question) => {
-//   question.addEventListener("click", () => {
-//     const arrow_index = faq_questions.indexOf(question);
-//     const current_faq_answer = faq_answers[arrow_index];
-//     const current_faq_arrow = faq_arrows[arrow_index];
-//     const faq_questionisHidden =
-//       current_faq_answer.classList.contains("hidden");
-
-//     alert("helllo");
-//     if (faq_questionisHidden) {
-//       current_faq_answer.classList.replace(`hidden`, `flex`);
-//       current_faq_arrow.classList.add("rotate-180");
-//       // faq_answer.classList.add("")
-//     } else {
-//       current_faq_answer.classList.replace(`flex`, `hidden`);
-//       current_faq_arrow.classList.replace("rotate-180", "rotate-0");
-//     }
-//   });
-// });
+// Initialize AOS
+AOS.init({
+  offset: 200,
+  duration: 1000, // Animation duration (in ms)
+  once: true, // Whether animation should happen only once
+});
 
 faq_questions.forEach((question) => {
   question.addEventListener("click", () => {
@@ -70,7 +59,6 @@ function moveToSlideIndex() {
 calculateNoOfMoves();
 
 testimonial_btns.addEventListener("click", (e) => {
-  
   const button = e.target.closest(".testimonial_right, .testimonial_left");
   if (!button) return; // Early exit if no button is clicked
 

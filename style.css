@@ -53,7 +53,10 @@ li a {
 
 .testimonial_slide {
   @apply flex gap-4 relative px-8 w-screen md:min-w-min bg-secondary_color before:content-[''] before:md:border before:md:border-black;
-  @apply transition-transform duration-300 ease-out;
+  /* @apply transition-all duration-[10s] ease-in-out; */
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 .faq_article {
@@ -63,8 +66,8 @@ li a {
 .faq_ans {
   @apply text-light_grey text-sm;
   animation-name: scale-animate;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
   animation-fill-mode: both;
 }
 
