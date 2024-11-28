@@ -48,6 +48,38 @@ article.offset_shadow {
 }
 
 .testimonial_slide {
-  @apply flex gap-4 relative px-8 w-screen md:min-w-min  bg-secondary_color before:content-[''] before:md:border before:md:border-black;
-  @apply transition-transform duration-300 ease-in-out;
+  @apply flex gap-4 relative px-8 w-screen md:min-w-min bg-secondary_color before:content-[''] before:md:border before:md:border-black;
+  @apply transition-transform duration-300 ease-out;
+}
+
+.faq_article {
+  @apply gap-6 flex justify-between items-center;
+}
+
+.faq_ans {
+  @apply text-light_grey text-sm;
+  animation-name: scale-animate;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.faq_arrow {
+  @apply transform duration-300 ease-in h-5 aspect-square;
+}
+.faq_arrow img {
+  @apply h-full w-full;
+}
+
+#FAQ > hr {
+  @apply mt-6 mb-3;
+}
+
+@keyframes scale-animate {
+  0% {
+    transform: scaleY(0.7);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
