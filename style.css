@@ -25,17 +25,21 @@ article.offset_shadow {
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
 }
+
 .financial_plan_icon_container {
   @apply flex justify-center md:w-[60px] md:h-[60px] flex-1 md:flex-none items-center  rounded-lg p-8 md:p-2 bg-[#202020] offset_shadow;
 }
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 .financial_freedom_article_header {
   @apply flex gap-4 items-center mb-4;
+}
+
+li a {
+  @apply text-light_grey hover:underline;
 }
 
 @keyframes animate-border {
