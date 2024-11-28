@@ -13,6 +13,7 @@ faq_questions.forEach((question) => {
     const faq_questionisHidden =
       current_faq_answer.classList.contains("hidden");
 
+    alert("helllo");
     if (faq_questionisHidden) {
       current_faq_answer.classList.replace(`hidden`, `flex`);
       current_faq_arrow.classList.add("rotate-180");
@@ -46,7 +47,7 @@ function moveToSlideIndex() {
   });
 }
 
-window.addEventListener("resize", moveToSlideIndex); // Simplified resize handling
+// window.addEventListener("resize", moveToSlideIndex); // Simplified resize handling
 calculateNoOfMoves();
 
 testimonial_btns.addEventListener("click", (e) => {
