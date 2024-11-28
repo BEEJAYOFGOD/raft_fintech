@@ -46,6 +46,7 @@ window.addEventListener("resize", () => {
 
 testimonial_btns.addEventListener("click", (e) => {
   if (e.target.classList.contains("testimonial_right")) {
+    alert("hey");
     if (index < no_of_moves) {
       index += 1;
       moveToSlideIndex();
