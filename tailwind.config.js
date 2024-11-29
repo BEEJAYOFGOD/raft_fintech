@@ -29,13 +29,13 @@ export default {
         happy: "50px -50px",
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 25s linear infinite forwards",
+        "infinite-scroll": "infinite-scroll 25s linear infinite backwards",
       },
 
       keyframes: {
         "infinite-scroll": {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(-200%)" },
         },
       },
     },

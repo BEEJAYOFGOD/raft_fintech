@@ -11,7 +11,7 @@ const header = document.querySelector("header");
 
 // Initialize AOS
 AOS.init({
-  offset: 200,
+  // offset: 50,
   duration: 1000, // Animation duration (in ms)
   // Whether animation should happen only once
 });
@@ -85,4 +85,6 @@ menu.addEventListener("click", (e) => {
 });
 
 let copy = document.querySelector("#logo-slide").cloneNode(true);
-document.querySelector("#logos").appendChild(copy);
+for (let i = 0; i < 1; i++) {
+  document.querySelector("#logo-container").appendChild(copy);
+}
