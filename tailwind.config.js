@@ -28,6 +28,16 @@ export default {
       objectPosition: {
         happy: "50px -50px",
       },
+      animation: {
+        "infinite-scroll": "infinite-scroll 25s linear infinite forwards",
+      },
+
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [],

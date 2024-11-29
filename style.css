@@ -109,11 +109,23 @@ li a {
   animation-delay: 0s;
 }
 
+#logo-slide li {
+  /* border: 1px solid white; */
+}
 @keyframes pulse {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes logo-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }

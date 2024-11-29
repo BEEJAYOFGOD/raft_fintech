@@ -9,7 +9,7 @@
   </head>
   <body class="bg-[#070606] text-white overflow-x-clip">
     <header
-      class="flex justify-between p-4 md:p-2 items-center border-b-2 border-[#3D3D3D]"
+      class="flex justify-between p-4 md:p-2 items-center md:border-b-2 border-b-2 border-[#3D3D3D] flex-wrap sticky top-0 overflow-hidden bg-[#070606] z-50"
     >
       <div class="flex items-center">
         <div id="logo-icon">
@@ -21,21 +21,25 @@
         </div>
         <h1 class="md:text-3xl">Raft</h1>
       </div>
-      <nav class="hidden md:flex">
-        <ul class="flex gap-12 text-light_grey">
-          <li><a href="" class="md:hover:text-white">Solutions</a></li>
-          <li><a href="" class="md:hover:text-white">Learn</a></li>
-          <li><a href="" class="md:hover:text-white">About</a></li>
-        </ul>
-      </nav>
-      <nav class="hidden md:flex gap-2 items-center">
-        <a href="">Login</a>
-        <a class="bg-hero_green rounded-full p-2 md:px-4 text-sm hover:bg-secondary_color hover:bg-opacity-75 active:bg-opacity-95" href=""
-          >Get Started</a
-        >
-      </nav>
+    
+        <nav class="flex md:items-center md:static order-4 md:order-none min-w-full md:min-w-min ml-4 mt-8 md:m-0 nav">
+          <ul class="flex flex-col items-start md:items-center md:flex-row md:gap-12 text-light_grey">
+            <li><a href="" class="md:hover:text-white">Solutions</a></li>
+            <li><a href="" class="md:hover:text-white">Learn</a></li>
+            <li><a href="" class="md:hover:text-white">About</a></li>
+          </ul>
+        </nav>
 
-      <div class="md:hidden flex">
+        <nav class="flex flex-col items-start md:items-center md:flex-row gap-2 order-5 md:order-none min-w-full md:min-w-min ml-4 my-6 md:m-0 nav">
+          <a href="">Login</a>
+          <a class="bg-hero_green rounded-full p-2 md:px-4 text-sm hover:bg-secondary_color hover:bg-opacity-75 active:bg-opacity-95" href=""
+          >Get Started</a>
+        </nav>
+      
+        <hr class="flex md:hidden min-w-full order-3 md:order-none mt-4 md:mt-0 nav">
+   
+
+      <div id="menu" class="md:hidden flex cursor-pointer">
         <img src="./images/mobile-menu.svg" alt="mobile menu btn" />
       </div>
     </header>
@@ -84,32 +88,42 @@
       <!----carousel slider-->
       <section class="text-center mt-8 mb-32" id="carousel_companies">
         <h3 class="text-light_grey">FEATURED AND SEEN IN</h3>
-        <div
-          id="carousel_slide"
-          class="flex gap-12 md:justify-center items-center overflow-auto px-4"
-        >
-          <div class="min-w-[25vw] md:min-w-12 flex items-center">
-            <img
-              class="w-full"
-              src="./images/Forbes_logo 1.png"
-              alt="cnbc logo"
-            />
-          </div>
-          <div class="min-w-[25vw] md:min-w-12 flex items-center">
-            <img class="w-full" src="./images/cnbc-1.png" alt="cnbc logo" />
-          </div>
-          <div class="min-w-[25vw] md:min-w-12 flex items-center">
-            <img src="./images/bloomberg-1.png" alt="bloomber logo" />
-          </div>
-          <div class="min-w-[25vw] md:min-w-12 flex items-center">
-            <img src="./images/reuters-2-1 1.png" alt="reuter logo" />
-          </div>
-          <div class="min-w-[25vw] md:min-w-12 flex items-center">
-            <img src="./images/cnn-logo 1.png" alt="cnn logo" />
-          </div>
+
+
+        <div 
+        id="logos"
+        class="w-full inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+          <ul id="logo-slide" class="animate-infinite-scroll flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none">
+            <li>
+            <li>
+              <img
+                src="./images/Forbes_logo 1.png"
+                alt="cnbc logo"
+              />
+            </li>
+   
+            <li>
+              <img src="./images/cnbc-1.png" alt="cnbc logo" />
+            </li>
+            <li>
+              <img src="./images/bloomberg-1.png" alt="bloomber logo" />
+            </li>
+            <li>
+              <img src="./images/reuters-2-1 1.png" alt="reuter logo" />
+            </li>
+            <li>
+              <img src="./images/cnn-logo 1.png" alt="cnn logo" />
+            </li>
+          </ul> 
+          
+         
         </div>
+        
+        
+       
       </section>
 
+      
       <!--- Financial Jounrey -->
       <section class="text-center mb-32">
         <h1 class="text-4xl md:text-6xl mb-8 max-w-2xl mx-auto">
@@ -424,10 +438,12 @@
             data-aos="fade-right"
           >
             <h2 class="mb-4 text-3xl">Spend better</h2>
+
             <p class="text-light_grey">
               Set and achieve financial goals with ease, automate your savings,
               and watch your money grow without the stress.
             </p>
+
             <div class="w-full flex justify-center">
               <img
                 class="min-w-full"
@@ -496,24 +512,25 @@
           Introducing RAFT'S Next-Gen Cards
         </h1>
 
-        <p class="text-sm text-light_grey mb-12 max-w-md mx-auto">
+        <p class="text-sm text-light_grey mb-12 max-w-md mx-auto md:mb-20">
           Discover RAFT's latest innovation - our new cards. Elevate your
           banking experience with cutting-edge features, security, and
           unprecented convenience.
         </p>
 
         
-        <div class="full flex gap-2 group justify-center md:hover:justify-center cursor-pointer"
+        <div class="full flex group  md:hover:justify-center cursor-pointer"
         data-aos="fade-up">
-          <div class="-mr-96 z-0 -rotate-12 opacity-0 md:group-hover:opacity-100 transition md:group-hover:duration-1000 duration-200 ease-in-out">
+
+          <div class="-mr-[35rem] z-0 -rotate-45 opacity-0 md:group-hover:opacity-100 transition md:group-hover:duration-1000 duration-200 ease-in-out">
             <img class=" grayscale " src="./images/atm.png" alt="credit card" />
           </div>
         
-          <div class="z-10 mb-20">
-            <img  src="./images/atm.png" alt="credit card" />
+          <div class="z-10 mb-20 mx-auto">
+            <img src="./images/atm.png" alt="credit card" />
           </div>
 
-          <div id="test" class="-ml-96 z-0 rotate-12 opacity-0 md:group-hover:opacity-100 transition md:group-hover:duration-1000 duration-200 ease-in-out">
+          <div id="test" class="-ml-[35rem] z-0 rotate-45 opacity-0 md:group-hover:opacity-100 transition md:group-hover:duration-1000 duration-200 ease-in-out">
             <img class="grayscale" src="./images/atm.png" alt="credit card" />
           </div>
         </div>
