@@ -54,7 +54,6 @@ testimonial_btns.addEventListener("click", (e) => {
     index = index === 0 ? no_of_moves : index - 1;
   }
 
-  alert(index);
   moveToSlideIndex();
 });
 
