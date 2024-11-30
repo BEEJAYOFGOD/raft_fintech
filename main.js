@@ -9,15 +9,17 @@ const menu = document.querySelector("#menu");
 const navs = document.querySelectorAll(".nav");
 const header = document.querySelector("header");
 
-// Initialize AOS
-AOS.init({
-  // offset: 50,
-  duration: 1000, // Animation duration (in ms)
-  // Whether animation should happen only once
-});
-
 let index = 0;
 let no_of_moves;
+
+// Initialize AOS
+AOS.init({
+  offset: 150,
+  duration: 1000,
+  // once: true,
+  // Animation duration (in ms)
+  // Whether animation should happen only once
+});
 
 function isMobileView() {
   return window.innerWidth <= 740;
@@ -31,6 +33,7 @@ function calculateNoOfMoves() {
 
 function moveToSlideIndex() {
   calculateNoOfMoves(); // Always recalculate
+
   testimonail_slides.forEach((slide) => {
     slide.style.transform = isMobileView()
       ? `translateX(-${index * 100}%)`
@@ -38,11 +41,9 @@ function moveToSlideIndex() {
   });
 }
 
-// window.addEventListener("resize", moveToSlideIndex); // Simplified resize handling
-calculateNoOfMoves();
-
 testimonial_btns.addEventListener("click", (e) => {
   const button = e.target.closest(".testimonial_right, .testimonial_left");
+
   if (!button) return; // Early exit if no button is clicked
 
   if (button.classList.contains("testimonial_right")) {
@@ -79,7 +80,6 @@ menu.addEventListener("click", (e) => {
   if (mobileMenu) {
     navs.forEach((nav) => {
       nav.classList.toggle("hidden");
-     
     });
   }
 });

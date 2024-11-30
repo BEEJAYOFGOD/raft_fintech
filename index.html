@@ -891,7 +891,7 @@
     <footer class="mx-6 md:mx-20 mb-10">
       <div class="md:flex md:gap-12">
         <section
-          class="flex items-center gap-4 p-4 rounded-md border border-white border-dashed mb-12"
+          class="flex items-center gap-4 p-4 rounded-md border border-white border-dashed hover:border-double transition-all mb-12"
           id="QRCODE"
         >
           <div>
@@ -902,9 +902,19 @@
           </div>
           <div>
             <p>Scan to download Apps on the Playstore and Appstore</p>
-            <div class="flex gap-2">
-              <img src="./images/google logo.svg" alt="play games" />
-              <img src="./images/apple logo.svg" alt="apple store" />
+            <div class="flex gap-2 ">
+              <div class="hover:opacity-60 active:opacity-100">
+                <a>
+                  <img  src="./images/google logo.svg" alt="play games" />
+                </a>
+                 </div>
+
+              <div class="hover:opacity-60 active:opacity-100">
+                <a>
+                <img src="./images/apple logo.svg" alt="apple store" />
+                </a>
+            </div>
+
             </div>
           </div>
         </section>
