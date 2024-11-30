@@ -130,4 +130,19 @@ li a {
   }
 }
 
+.slide_down {
+  animation-name: slide-down;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in;
+  /* animation-direction: alternate; */
+  animation-fill-mode: forwards;
+}
 
+@keyframes slide-down {
+  from {
+    transform: translateY(-300px);
+  }
+  to {
+    transform: none;
+  }
+}
