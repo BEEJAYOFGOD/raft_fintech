@@ -82,7 +82,6 @@ menu.addEventListener("click", (e) => {
   if (mobileMenu) {
     navs.forEach((nav) => {
       nav.classList.toggle("hidden");
-      nav.classList.toggle("slide_down");
     });
   }
 });
