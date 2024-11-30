@@ -82,6 +82,10 @@ li a {
   @apply mt-6 mb-3;
 }
 
+#FAQ > p {
+  @apply max-w-3xl;
+}
+
 @keyframes scale-animate {
   0% {
     transform: scaleY(0.7);
