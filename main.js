@@ -41,6 +41,8 @@ function moveToSlideIndex() {
   });
 }
 
+calculateNoOfMoves();
+
 testimonial_btns.addEventListener("click", (e) => {
   const button = e.target.closest(".testimonial_right, .testimonial_left");
 
@@ -52,6 +54,7 @@ testimonial_btns.addEventListener("click", (e) => {
     index = index === 0 ? no_of_moves : index - 1;
   }
 
+  alert(index);
   moveToSlideIndex();
 });
 
@@ -83,8 +86,3 @@ menu.addEventListener("click", (e) => {
     });
   }
 });
-
-let copy = document.querySelector("#logo-slide").cloneNode(true);
-for (let i = 0; i < 1; i++) {
-  document.querySelector("#logo-container").appendChild(copy);
-}
